@@ -184,7 +184,8 @@ class graphite::params {
 
         /^8\.\d+/: {
           $apache_24        = true
-          $graphitepkgs     = union($common_os_pkgs,['python-sqlite3dbm', 'dejavu-fonts-common', 'dejavu-sans-fonts', 'python-cairocffi','python2-crypto'])
+          #$graphitepkgs     = union($common_os_pkgs,['python-sqlite3dbm', 'dejavu-fonts-common', 'dejavu-sans-fonts', 'python-cairocffi','python2-crypto'])
+          $graphitepkgs     = []
           $service_provider = 'systemd'
         }
 
